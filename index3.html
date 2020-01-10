@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>SABBIR FAHIM</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="jquery-3.4.1.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<style>
+
+.slide{position:absolute;opacity:0}
+.slide img{width:300px}
+.active{opacity:1}
+table,th,td{border:1px solid black;border-collapse:collapse;text-align:center;padding:10px 10px;background-color:blue;font-weight:bold}
+table,th,td:hover{background:green;color:white}
+td:hover{transform:scale(1.1);transition:all 1s}
+
+
+body{margin:25px}
+.home{padding:10px margin:5px}
+.color{color:black;    margin: 20px;
+    padding: 10px;font-weight:bold;}
+.height{border-bottom:2px solid red;background-color:#ffffff!important;
+padding:10px}
+.color:hover
+{color:red;text-decoration:none;border-top:1px solid rgba(0,0,0,.1);border-left:1px solid rgba(0,0,0,.1);
+border-right:1px solid rgba(0,0,0,.1);
+border-bottom:3px solid red;
+}
+.name::first-letter{color:red;font-size:20px}
+.show{display:block !important;transition:all 1s}
+.show2{display:block !important}
+.mobile{display:none}
+.bisleson{display:none}
+
+.sohor{display:none}
+.sohor2{display:block !important}
+
+#inp_image{width:60px;color:#fff;border:1px solid blue}
+
+
+</style>
+<body>
+<nav class="navbar  sticky-top navbar-expand-lg navbar-expand-md  navbar-light bg-light height">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<div class="name" style="color:green;font-size:20px;border:5px solid blue;border-radius:100px">
+<a class="navbar-brand"><i><b>S</b>abbir</i><br/> <em>Fahim</em></a>
+
+</div>
+
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="navbar-nav ml-auto">
+	
+	      <li class="nav-item active">
+        
+		<a class="color" style="color:red;
+		text-decoration:none;border-top:1px solid rgba(0,0,0,.1);border-left:1px solid rgba(0,0,0,.1);
+		border-right:1px solid rgba(0,0,0,.1);border-bottom:3px solid red"	
+		href="index.html">HOME</a>
+      </li>
+	
+      <li class="nav-item"><a class="color"   href="index3.html">STUDY <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="color" href="index.html">WEB & PROGRAMMING</a>
+      </li>
+     <li class="nav-item">
+        <a class="color"  href="index.html">YOUTUBE</a>
+      </li>
+	 
+      <li class="nav-item">
+        <a class="color" href="index2.html" tabindex="-1" aria-disabled="true">SERVICES</a>
+      </li>
+	  
+	   <li class="nav-item">
+        <a class="color"  href="index.html">ABOUT ME</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+<script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+<div class="col-lg-12 col-md-10 col-sm-10">
+<div style="margin:50px"  id="table">
+<h1>Study</h1>
+<table>
+<tr>
+<th>CLASS</th><th>SCHOOL/MADRASAH</th><th>RESULT</th><th>BOARD</th>
+</tr>
+<tr>
+<td>8</td><td>Arab shah Academy</td><td>GPA-5</td><td>Sylhet</td>
+</tr>
+
+<tr>
+<td>HIFZ</td><td>DIFFERENT</td><td>GPA-5(momtaj)</td><td>DIFFERENT</td>
+</tr>
+<tr>
+<td>10</td><td>Sylhet Ideal MADRASAH</td><td>GPA-5</td><td>MADRASAH</td>
+</tr>
+
+</table>
+</div>
+</div>
+
+</div>
+
+
+<div class="row">
+<div style="border-left:1px solid gray" class="col-lg-12 col-md-12 col-sm-12">
+<center>
+<div class="container">
+<div class="slide active"><img class="img-fluid" src="img/profile.jpg"/></div>
+<div class="slide"><img class="img-fluid" src="img/cover.jpg"/></div>
+<div class="slide"><img class="img-fluid" src="img/dreambig.jpg"/></div>
+
+</div>
+<script>
+setInterval(function(){if(document.getElementsByClassName("slide")[0].classList.contains("active")){
+document.getElementsByClassName("slide")[1].classList.add("active");	
+document.getElementsByClassName("slide")[0].classList.remove("active");		
+}
+
+else if(document.getElementsByClassName("slide")[1].classList.contains("active")){
+document.getElementsByClassName("slide")[2].classList.add("active");	
+document.getElementsByClassName("slide")[1].classList.remove("active");		
+}
+
+else if(document.getElementsByClassName("slide")[2].classList.contains("active")){
+document.getElementsByClassName("slide")[0].classList.add("active");	
+document.getElementsByClassName("slide")[2].classList.remove("active");		
+}
+
+},1000)
+</script>
+</body>
